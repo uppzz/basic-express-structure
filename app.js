@@ -1,18 +1,16 @@
 // create server
-import express from 'express';
+const express = require('express')
 const app = express();
 
 // import path
-import path from 'path';
-const __dirname = path.resolve();
+const path = require('path')
 app.set("views", path.join(__dirname, "views"));
 // set template(views) directory
 app.set("views", "views");
 // use static directory
 app.use(express.static(path.join(__dirname, 'public')));
 // for dotenv using  
-import dotenv from 'dotenv';
-dotenv.config({ path: ".env" });
+require('dotenv').config({ path: ".env" })
 // for getting data from forms
 app.use(express.urlencoded({ extended: true }));
 // means that json will be used in the whole project 
@@ -21,7 +19,7 @@ app.use(express.json());
 
 // ! Handlebars configuration start
 // import handlebars module
-import exphbs from 'express-handlebars';
+const exphbs = require('express-handlebars');
 //Sets handlebars configurations
 const hbs = exphbs.create({
    layoutsDir: __dirname + '/views/layouts',
@@ -62,8 +60,8 @@ app.set("view engine", "hbs");
 
 
 // routes
-import getIndex from './routes/open.js';
-app.use(getIndex);
+const openRouter = require('./routes/open.js')
+app.use(openRouter);
 
 
 
@@ -71,8 +69,8 @@ app.use(getIndex);
 // TODO Code ends here
 
 // Page Not Found --> Immer ans Ende setzen
-import get404 from './controllers/error.js';
-app.use(get404);
+const errorController = require('./controllers/error.js')
+app.use(errorController.get404);
 
 // server listen on port process.env.PORT (dotENV)
 app.listen(process.env.PORT || "5000", () => {

@@ -1,7 +1,7 @@
-import express from 'express'
+const express = require('express')
 const router = express.Router()
 
-import getIndex from '../controllers/open.js'
-router.get("/", getIndex)
+const openController = require('../controllers/open.js')
+router.get("/", openController.getIndex)
 
-export default router 
+module.exports = router 
