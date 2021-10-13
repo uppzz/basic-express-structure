@@ -1,0 +1,1 @@
+hier werden allgemeine hilfsprogramme drin gespeichert. die man vllt auch aus dem controller auslagern kann, damit dieser nicht zu voll wird. 

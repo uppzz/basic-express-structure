@@ -1,0 +1,1 @@
+in dem public ordner findet ihr alle css, js, und images

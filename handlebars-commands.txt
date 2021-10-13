@@ -1,0 +1,21 @@
+extension: hbs snippets
+
+hbs→	{{ }}
+hif→	if condition	
+helif→	if else condition	
+heach→	each method	
+   {{#each list}}
+      {{this}} 
+   {{/each}}
+   
+heach+ -> each method with val key    INFO: eigenes snippet erstellt
+   {{#each list as |val key|}}
+      {{val}} {{key}}
+   {{/each}}
+
+hpar→	partial method	
+hun→	unless method	
+hcusfunc→	Custom Helper function	
+hlog→	Hbs logger helper	
+hlookup→	Hbs lookup helper	
+hwi→	with condition

@@ -1,0 +1,2 @@
+Im controller befindet sich die logik. Hier kann man daten aus der DB einlesen und in die Templates schicken.
+schleifen funktionen usw sind hier auch möglich.. falls man irgendwas mit js machen muss mit seinen daten
