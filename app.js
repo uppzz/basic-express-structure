@@ -28,7 +28,7 @@ const hbs = exphbs.create({
    extname: "hbs",
    defaultLayout: "base",     // default ist: views/layouts/<dateiName>
    // instance level -> global helper functions -> they are all available everywhere in the program
-   helpers: {
+   helpers: {           // helpers kann man auch in controllers mitgeben als objekt (können dort auch überschrieben werden)
       // eq Beispiel im template: {{#if (eq v1 v2)}} mache etwas {{/if}}
       eq: (v1, v2) => v1 === v2,
       ne: (v1, v2) => v1 !== v2,
