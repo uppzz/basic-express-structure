@@ -5,7 +5,7 @@ const app = express();
 // import path
 const path = require('path');
 // set templates views directory
-app.set("views", path.join(__dirname, "views"));
+app.set("views", path.join(__dirname, "views/pages"));
 // use static directory
 app.use(express.static(path.join(__dirname, 'public')));
 // for dotenv using  
