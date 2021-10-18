@@ -1,6 +1,3 @@
-npm i express dotenv express-handlebars  
-npm i --save-dev nodeman  
----------------------------------------------------
 # INFO
 -> folgendes wird bei mir alles in singular bzw plural gespeichert 
 
