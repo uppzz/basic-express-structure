@@ -1,9 +1,7 @@
 exports.getIndex = (req, res, next) => {
    res.render("pages/index", {
       layout: "base",            // default   "false" auch möglich
-      helper: {
-         test
-      },
+      helper: {},
       pageTitle: "Programmierhilfe.de"
    });
 };
