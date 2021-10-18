@@ -1,3 +1,3 @@
-1. made views directory views/pages as default in app.js (line 8)
-   -> the path u'll use in the controller for templates is if u would be in pages already
+1. app.js line 8 -> setzt den defaul wert für das views Verzeichnis auf views/pages
+   -> Das bedeutet, dass man immer, wenn man ein Template rendern möchte, davon ausgeht, dass als wenn man im views/pages Ordner wäre... Beispiel: controllers/open.js getIndex
 2.
