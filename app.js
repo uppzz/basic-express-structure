@@ -1,6 +1,8 @@
 // create server
 const express = require('express');
 const app = express();
+// Security check for bad modules
+require('npm-audit')();
 
 // import path
 const path = require('path');
