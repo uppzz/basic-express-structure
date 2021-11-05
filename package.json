@@ -27,5 +27,6 @@
   "homepage": "https://github.com/uppzz/backend-c4h#readme",
   "devDependencies": {
     "nodemon": "^2.0.13"
-  }
+  },
+  "keywords": []
 }
