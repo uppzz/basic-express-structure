@@ -67,7 +67,8 @@ app.use(openRouter);
 
 // TODO Code ends here
 
-// Page Not Found --> Immer ans Ende setzen
+// Page Not Found --> Immer ans Ende setzen 
+// Wenn die anderen routes nicht zutreffen, trifft automatisch immer diese hier zu.
 const errorController = require('./controllers/error.js');
 app.use(errorController.get404);
 
