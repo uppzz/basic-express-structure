@@ -74,7 +74,7 @@ app.use(openRouter);
 
 // Page Not Found --> Immer ans Ende setzen 
 // Wenn die anderen routes nicht zutreffen, trifft automatisch immer diese hier zu.
-const errorController = require('./controllers/error.js');
+const errorController = require('./controllers/errorController.js');
 app.use(errorController.get404);
 
 // server listen on port process.env.PORT (dotENV)
