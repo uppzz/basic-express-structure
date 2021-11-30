@@ -57,6 +57,11 @@ app.set("view engine", "hbs");
 // TODO Code starts here
 
 
+// wird im openController benutzt und ist in jeder route verfügbar, wegen next()
+app.use((req, res, next) => {
+   req.erfundeneVariable = new Date;
+   next();
+})
 
 // routes
 const openRouter = require('./routes/open.js');
