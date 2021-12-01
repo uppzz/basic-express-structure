@@ -64,7 +64,7 @@ app.use((req, res, next) => {
 })
 
 // routes
-const openRouter = require('./routes/openRoutes.js');
+const openRouter = require('./routes/openRouter.js');
 app.use(openRouter);
 
 
